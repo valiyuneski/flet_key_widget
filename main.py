@@ -4,7 +4,8 @@ class Body(ft.Container):
     def __init__(self):
         super().__init__()
         self.content = ft.Text("Flet app is running!")
-        self.bgcolor = "white"
+        self.bgcolor = "yellow"
+        self.content.color = "blue"
         self.padding = 10
         self.border_radius = 5
 
@@ -33,4 +34,4 @@ def main(page: ft.Page):
     )
 
 if __name__ == "__main__":
-    ft.app(target=main)
+    ft.run(main)
